@@ -1,0 +1,1 @@
+# something about testing strings
