@@ -11,6 +11,41 @@ class Student(object):
 	def getSnack(self):
 		return self.fave_snack
 
+class College(object):
+	""" Encapsulates a school. """
+
+	def __init__(self, name, minGPA):
+		self.name = name
+		self.minGPA = minGPA
+
+	def acceptStudent(self, studentGPA):
+		# returns True if student accepted
+		# returns False if not
+		# write me!
+		if studentGPA >= self.minGPA:
+			return True
+		else:
+			return False
+
+myFirstChoice = College('Columbia', 3.95)
+krystalGPA = 4.0
+print('Did Krystal get in?')
+print(myFirstChoice.acceptStudent(krystalGPA))
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 # code execution starts here
 myFirstStudent = Student("Jenny", 4.0, "carrots")
 print(myFirstStudent.getSnack())

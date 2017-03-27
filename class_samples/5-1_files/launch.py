@@ -1,8 +1,11 @@
-my_list = ['Jenny', 'Oscar', 'Alonzo', 'Angela']
+class Teacher(object):
+	def __init__(self, name, subject):
+		self.name = name
+		self. subject = subject
+	
+	def isSubjectBest(self):
+		return self.subject == "Biology"
 
-f = open("coolpeople.txt", "w")
-
-for item in my_list:
-    f.write(item + "\n")
-
-f.close()
+third = Teacher("Ms. Fiske", "English")
+fifth = Teacher("Mr. Flax", "Biology")
+print(third.isSubjectBest())
